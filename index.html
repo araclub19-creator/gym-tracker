@@ -126,54 +126,54 @@ html, body { height: 100%; background: var(--bg); color: var(--text); font-famil
 <script>
 const WK = {
   A: {
-    label: 'Pierna', day: 'Jueves',
+    label: 'Pierna+ABS', day: 'Jueves',
     warmup: '5\' bike + 3×10 rotaciones de brazo',
-    cardio: '15\' cinta a 130bpm',
+    cardio: '10\' cinta a 130bpm',
     abs: null,
     exercises: [
-      { name: 'Leg press',           sets: 4, rest: "3'",    reps: [10,10,12,12] },
-      { name: 'Zancada con peso',    sets: 4, rest: "2'",    reps: ['8×lado','8×lado','10×lado','10×lado'] },
-      { name: 'Leg extensión',       sets: 4, rest: "2'30\"",reps: [15,15,20,20] },
-      { name: 'Peso muerto rumano',  sets: 4, rest: "3'",    reps: [6,8,10,12] },
-      { name: 'Leg curl',            sets: 4, rest: "2'",    reps: [12,12,15,15] },
+      { name: 'Sentadilla en multipower', sets: 4, rest: "3'",    reps: [8,8,10,10] },
+      { name: 'Leg press',                sets: 4, rest: "3'",    reps: [12,12,15,15] },
+      { name: 'Leg extensión',            sets: 4, rest: "2'",    reps: [10,10,12,12] },
+      { name: 'Leg curl',                 sets: 4, rest: "2'30\"",reps: [12,12,15,15] },
+      { name: 'Peso muerto rumano',       sets: 4, rest: "3'",    reps: [10,10,12,12] },
     ]
   },
   B: {
     label: 'Pull', day: 'Lunes',
     warmup: '5\' bike + 3×10 rotaciones de brazo',
-    cardio: '15\' cinta a 130bpm',
-    abs: '4×20 abdominales en máquina',
+    cardio: '10\' cinta a 130bpm',
+    abs: null,
     exercises: [
-      { name: 'Remo en polea',          sets: 4, rest: "3'",    reps: [8,8,10,10] },
-      { name: 'Jalón al pecho',         sets: 4, rest: "2'30\"",reps: [12,12,15,15] },
-      { name: 'Remo en máquina',        sets: 4, rest: "2'",    reps: [10,12,12,15] },
-      { name: 'Curl de bíceps en polea',sets: 4, rest: "2'",    reps: [12,15,12,12] },
-      { name: 'Curl con máquina',       sets: 4, rest: "2'30\"",reps: [10,10,12,12] },
+      { name: 'Jalón al pecho',             sets: 4, rest: "3'",    reps: [10,10,12,12] },
+      { name: 'Remo en polea',              sets: 4, rest: "2'",    reps: [12,12,15,15] },
+      { name: 'Remo con barra',             sets: 4, rest: "2'30\"",reps: [8,10,10,12] },
+      { name: 'Curl de bíceps con barra recta', sets: 4, rest: "3'", reps: [12,12,15,15] },
+      { name: 'Curl martillo',              sets: 4, rest: "2'30\"",reps: [10,10,12,12] },
     ]
   },
   C: {
     label: 'Push', day: 'Martes',
     warmup: '5\' bike + 3×10 rotaciones de brazo',
-    cardio: '15\' cinta a 130bpm',
+    cardio: '10\' cinta a 130bpm',
     abs: null,
     exercises: [
-      { name: 'Press banca vertical',         sets: 4, rest: "3'",    reps: [8,8,10,10] },
-      { name: 'Contractora',                  sets: 4, rest: "2'30\"",reps: [12,12,15,15] },
-      { name: 'Press banca inclinado multipow',sets: 4, rest: "2'",   reps: [10,12,12,15] },
-      { name: 'Extensión de tríceps en polea',sets: 4, rest: "2'",    reps: [12,15,12,12] },
-      { name: 'Press francés barra Z',        sets: 4, rest: "2'30\"",reps: [10,10,12,12] },
+      { name: 'Press banca inclinado multipow', sets: 4, rest: "3'",    reps: [6,8,8,10] },
+      { name: 'Flexiones',                      sets: 4, rest: "2'",    reps: ['Max','Max','Max','Max'] },
+      { name: 'Press banca con mancuernas',     sets: 4, rest: "2'30\"",reps: [8,10,10,12] },
+      { name: 'Press francés con mancuerna',    sets: 4, rest: "3'",    reps: [10,10,10,10] },
+      { name: 'Extensión de tríceps en polea',  sets: 4, rest: "2'30\"",reps: [8,8,8,8] },
     ]
   },
   D: {
     label: 'Torso', day: 'Viernes',
     warmup: '5\' bike + 3×10 rotaciones de brazo',
-    cardio: '15\' cinta a 130bpm',
-    abs: '5×12 abdominales en máquina',
+    cardio: '10\' cinta a 130bpm',
+    abs: '4×12 abdominales en máquina',
     exercises: [
-      { name: 'Flexiones + remo con barra',       sets: 4, rest: "2'30\"",reps: ['Max+10','Max+12','Max+12','Max+15'] },
-      { name: 'Press de hombro con máquina',       sets: 4, rest: "3'",   reps: [8,8,10,12] },
-      { name: 'Aperturas laterales con mancuerna', sets: 4, rest: "2'30\"",reps: [12,12,15,15] },
-      { name: 'Remo al mentón barra Z',            sets: 4, rest: "2'",   reps: [10,12,12,15] },
+      { name: 'Floor press + dominada supina',      sets: 4, rest: "3'",    reps: ['10+max','10+max','12+max','12+max'] },
+      { name: 'Facepull desde polea baja',          sets: 4, rest: "1'30\"",reps: [10,10,12,12] },
+      { name: 'Press de hombro con barra',          sets: 4, rest: "3'",    reps: [8,10,10,10] },
+      { name: 'Aperturas laterales hombro con manc',sets: 4, rest: "2'",    reps: [12,12,15,15] },
     ]
   }
 };
@@ -182,10 +182,10 @@ let currentTab = 'A';
 let currentWeek = 0;
 let data = {};
 
-try { const s = localStorage.getItem('gymlog_v2'); if (s) data = JSON.parse(s); } catch(e) {}
+try { const s = localStorage.getItem('gymlog_v3'); if (s) data = JSON.parse(s); } catch(e) {}
 
 function save() {
-  try { localStorage.setItem('gymlog_v2', JSON.stringify(data)); } catch(e) {}
+  try { localStorage.setItem('gymlog_v3', JSON.stringify(data)); } catch(e) {}
   const t = document.getElementById('toast');
   t.classList.add('show');
   clearTimeout(t._timer);
